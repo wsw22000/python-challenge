@@ -52,14 +52,16 @@ print('--------------------')
 print(f'Winner: {winner}')    
 print('--------------------')
 
-output_path = open('election_results.txt', 'w')
+with open('election_results.txt', 'w') as txt_file:
+    txt_file.write(f'Election Results\n')
+    txt_file.write(f'--------------------\n')
+    txt_file.write(f'Total Votes: {total_votes_cast}\n')
+    txt_file.write(f'--------------------\n')
 
-output_path.write(f'Election Results\n')
-output_path.write(f'--------------------\n')
-output_path.write(f'Total Votes: {total_votes_cast}\n')
-output_path.write(f'--------------------\n')
-for candidate in sorted(votes_by_candidate, key=votes_by_candidate.get, reverse=True):
-    output_path.write(f'{candidate}: {round(votes_by_candidate[candidate]/total_votes_cast*100,3)}% ({votes_by_candidate[candidate]})\n')
-output_path.write('--------------------\n')
-output_path.write(f'Winner {winner}\n')
-output_path.write('--------------------\n')
+    for candidate in sorted(votes_by_candidate, key=votes_by_candidate.get, reverse=True):
+        txt_file.write(f'{candidate}: {round(votes_by_candidate[candidate]/total_votes_cast*100,3)}% ({votes_by_candidate[candidate]})\n')
+        
+    txt_file.write('--------------------\n')
+    txt_file.write(f'Winner {winner}\n')
+    txt_file.write('--------------------\n')
+
