@@ -39,12 +39,21 @@ with open(csvpath) as csvfile:
                 greatest_profit_decrease = profit_change 
                 greatest_decrease_date = row[0]
                     
-    print('Financial Analysis')
-    print('-----------------------------------------------------------')
-    print(f'Total Months: {lines}')
-    print(f'The total Profits/Losses: {profit_loss_total}')
-    print(f'Greatest Increase in Profits: {greatest_profit_increase} on {greatest_increase_date}')
-    print(f'Greatest Decrease in Profits: {greatest_profit_decrease} on {greatest_decrease_date}')
+print('Financial Analysis')
+print('-----------------------------------------------------------')
+print(f'Total Months: {lines}')
+print(f'The total Profits/Losses: {profit_loss_total}')
+print(f'Greatest Increase in Profits: {greatest_profit_increase} on {greatest_increase_date}')
+print(f'Greatest Decrease in Profits: {greatest_profit_decrease} on {greatest_decrease_date}')
+
+output_path = open('comp_results.txt', 'w')
+
+output_path.write(f'Financial Analysis\n')
+output_path.write(f'--------------------------------------------------\n')
+output_path.write(f'Total Months: {lines}\n')
+output_path.write(f'The total Profits/Losses: {profit_loss_total}\n')
+output_path.write(f'Greatest Increase in Profits: {greatest_profit_increase} on {greatest_increase_date}\n')
+output_path.write(f'Greatest Decrease in Profits: {greatest_profit_decrease} on {greatest_decrease_date}\n')
 
 
 
