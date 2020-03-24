@@ -1,0 +1,6 @@
+Financial Analysis
+--------------------------------------------------
+Total Months: 86
+The total Profits/Losses: 38382578
+Greatest Increase in Profits: 1926159 on Feb-2012
+Greatest Decrease in Profits: -2196167 on Sep-2013
