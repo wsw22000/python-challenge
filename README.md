@@ -2,7 +2,7 @@
 
 ## PyBank
 
-![Revenue](Images/dividends.png)
+![Revenue](Images/profit_loss.png)
 
 * Was given a set of financial data called [budget_data.csv](PyBank/Resources/budget_data.csv). 
 
