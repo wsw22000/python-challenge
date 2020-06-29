@@ -24,7 +24,7 @@
 
 ![Vote-Counting](Images/voter_buttons_polling_place.png)
 
-* Was tasked with helping a small, theoretical, rural town modernize its vote-counting process.
+* Tasked with helping a small, theoretical, rural town modernize its vote-counting process.
 
 * Was provided a set of poll data called [election_data.csv](PyPoll/Resources/election_data.csv). The dataset was composed of three columns: `Voter ID`, `County`, and `Candidate`. Objective was to create a Python script that analyzes the votes and calculates each of the following:
 
