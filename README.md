@@ -2,7 +2,7 @@
 
 ## PyBank
 
-![Revenue](Images/profit_loss.png)
+![Revenue](Images/dividends.png)
 
 * Was given a set of financial data called [budget_data.csv](PyBank/Resources/budget_data.csv). 
 
@@ -24,9 +24,9 @@
 
 ![Vote-Counting](Images/voter_buttons_polling_place.png)
 
-* Was tasked with helping a small, theoretical, rural town modernize its vote-counting process. 
+* Was tasked with helping a small, theoretical, rural town modernize its vote-counting process.
 
-* Was given a set of poll data called [election_data.csv](PyPoll/Resources/election_data.csv). The dataset was composed of three columns: `Voter ID`, `County`, and `Candidate`. Was required to create a Python script that analyzes the votes and calculates each of the following:
+* Was provided a set of poll data called [election_data.csv](PyPoll/Resources/election_data.csv). The dataset was composed of three columns: `Voter ID`, `County`, and `Candidate`. Objective was to create a Python script that analyzes the votes and calculates each of the following:
 
   * The total number of votes cast
 
